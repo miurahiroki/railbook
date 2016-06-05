@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
+ï»¿<p id="notice"><%= notice %></p>
 
 <h1>Listing Books</h1>
 
-<%= link_to "ŒŸõ", search_books_path %>
-<%= linl_to "ƒŠƒZƒbƒg", books_path %>
+<%= link_to "æ¤œç´¢", search_books_path %>
+<%= linl_to "ãƒªã‚»ãƒƒãƒˆ", books_path %>
 
 <table>
   <thead>
@@ -31,7 +31,7 @@
         <td><%= book.cd %></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: "ã€Œ#{book.title}ã€ã‚’å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ" } %></td>
       </tr>
     <% end %>
   </tbody>
