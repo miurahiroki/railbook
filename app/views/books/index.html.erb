@@ -1,9 +1,12 @@
-<p id="notice"><%= notice %></p>
+ï»¿<p id="notice"><%= notice %></p>
 
 <h1>Listing Books</h1>
 
-<%= link_to "ŒŸõ", search_books_path %>
-<%= linl_to "ƒŠƒZƒbƒg", books_path %>
+<%= form_tag({:action=>"search"},{:method=>"GET"}) do %>
+<%= text_field_tag "search[title]" %>
+<%= submit_tag "æ¤œç´¢" %>
+<%= link_to "ãƒªã‚»ãƒƒãƒˆ", books_path %>
+<% end %>
 
 <table>
   <thead>
