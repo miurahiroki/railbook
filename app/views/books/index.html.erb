@@ -2,12 +2,9 @@
 
 <h1>Listing Books</h1>
 
-<%= form_tag({:action=>"search"},{:method=>"GET"}) do %>
-<%= text_field_tag "search[title]" %>
 <%= submit_tag "検索" %>
 <%= link_to "リセット", books_path %>
-<% end %>
-
+<%= link_to "rensyu2", view_helper_test_books_path %> 
 <table>
   <thead>
     <tr>

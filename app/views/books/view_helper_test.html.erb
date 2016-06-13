@@ -1,0 +1,24 @@
+<%= label :book, :title %>  
+ 
+<br><%= text_field :book, :title %></br>  
+  
+<br><%= number_field :book, :price %></br>  
+  
+<br><%= text_area :book, :memo %></br>  
+
+<br><%= check_box :book, :cd, {}, 1, 0 %></br>  
+
+<br><%= radio_button :user, :color, "red" %>赤  
+<%= radio_button :user, :color, "blue" %>青  
+  
+<br><select id="book_publish" name="book[publish]">    
+<option value="1">技術評論社</option>    
+<option value="2">集英社</option>    
+</select>  
+</br>    
+ 
+<br><%= select :user, :address, ["出雲市","松江市","雲南市"] %></br>  
+ 
+<br><%= link_to "出雲商業", "http://www.shimanet.ed.jp/izusho/" %></br>  
+ 
+<br><%= image_tag 'img_80761s_pic1.jpg'%></br>  
