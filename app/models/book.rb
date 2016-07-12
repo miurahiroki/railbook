@@ -1,4 +1,4 @@
 class Book < ActiveRecord::Base
  has_many :reviews
- has_many :publishes
+ belongs_to :publish
 end
