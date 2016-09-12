@@ -72,6 +72,7 @@
       params.require(:user).permit(:userid, :username, :password, :email)
     end
 
+
     def auth
       name = 'izumo'
       passwd = 'syogyo'
