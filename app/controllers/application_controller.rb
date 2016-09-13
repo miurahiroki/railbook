@@ -7,7 +7,7 @@
   private
   def check_logined
     # セッション情報;usr(id値)が存在するか
-    if sessin[:usr] then
+    if session[:usr] then
       #存在する場合はusersテーブルを検索し、ユーザー情報を取得
       # begin-rescueで例外処理
       begin
