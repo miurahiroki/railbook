@@ -75,8 +75,8 @@
 
 
     def auth
-      name = 'izumo'
-      passwd = 'syogyo'
+      name = 'miurahiroki'
+      passwd = 'hiroki1414'
       authenticate_or_request_with_http_basic('Railbook') do |n,p|
         n == name && p == passwd
       end
